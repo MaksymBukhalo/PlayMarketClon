@@ -26,7 +26,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ee8c0748cbf564989a4e54c39725af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvac: {fileID: 0}
   destroyObject: {fileID: 5716520563191712332}
 --- !u!1001 &9119794132422197559
 PrefabInstance:
@@ -59,6 +58,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 3bfd70cf36fcc9c48830e65b0276a252,
         type: 3}
+    - target: {fileID: 1215691808155477444, guid: 646ec8f78c3f9a74d9a6364d55dae600,
+        type: 3}
+      propertyPath: m_Horizontal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660062939067977938, guid: 646ec8f78c3f9a74d9a6364d55dae600,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660062939067977938, guid: 646ec8f78c3f9a74d9a6364d55dae600,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000753082
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660062939067977938, guid: 646ec8f78c3f9a74d9a6364d55dae600,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1800
+      objectReference: {fileID: 0}
     - target: {fileID: 3586322549580999092, guid: 646ec8f78c3f9a74d9a6364d55dae600,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -304,6 +323,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6367875243843730130}
+    - target: {fileID: 7701822822824958397, guid: 646ec8f78c3f9a74d9a6364d55dae600,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3586322550383109260, guid: 646ec8f78c3f9a74d9a6364d55dae600, type: 3}
     - {fileID: 217329146, guid: 646ec8f78c3f9a74d9a6364d55dae600, type: 3}
