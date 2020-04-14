@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class LoadDescription : MonoBehaviour
 {
-    public GameObject loadDescription;
-    public GameObject appsMenu;
+	public GameObject loadDescription;
+	public GameObject appsMenu;
 
-    public void LoadDescriptionPage()
-    {
-        appsMenu.SetActive(false);
-        loadDescription.SetActive(true);
-    }
+	public void LoadDescriptionPage()
+	{
+		appsMenu.SetActive(false);
+		loadDescription.SetActive(true);
+	}
 
-    public void ReturnApp()
-    {
-        loadDescription.SetActive(false);
-        appsMenu.SetActive(true);
-    }
+	public void ReturnApp()
+	{
+		loadDescription.SetActive(false);
+		appsMenu.SetActive(true);
+	}
 
 }

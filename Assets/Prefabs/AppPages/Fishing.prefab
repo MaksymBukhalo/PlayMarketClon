@@ -26,6 +26,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ee8c0748cbf564989a4e54c39725af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvac: {fileID: 0}
   destroyObject: {fileID: 5716520563191712332}
 --- !u!1001 &9119794132422197559
 PrefabInstance:
