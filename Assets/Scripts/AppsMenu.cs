@@ -10,6 +10,7 @@ public class AppsMenu : MonoBehaviour
     [SerializeField] private GameObject exampleAppProgram;
     [SerializeField] private Text nameGame;
     [SerializeField] private List<GameObject> listAppProgram;
+
     private float tranformApps = 400;
 
     public void Start()

@@ -8,7 +8,7 @@ public class Button : MonoBehaviour
     [SerializeField] private GameObject mainPage;
     [SerializeField] private ListApp listApp;
     [SerializeField] private Transform parent;
-    private string nameClon;
+
 
 
     public void ClicLoadApp()
@@ -18,7 +18,6 @@ public class Button : MonoBehaviour
         {
             if (gameObject.name == listApp.appList[i].name)
             {
-                nameClon = listApp.appList[i].name;
                 Instantiate(listApp.appList[i], parent);
             }
         }

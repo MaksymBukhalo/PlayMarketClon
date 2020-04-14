@@ -7,7 +7,7 @@ public class LoadDescription : MonoBehaviour
     public GameObject loadDescription;
     public GameObject appsMenu;
 
-    public void LoadDeccr()
+    public void LoadDescriptionPage()
     {
         appsMenu.SetActive(false);
         loadDescription.SetActive(true);
