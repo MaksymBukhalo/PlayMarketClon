@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadDescription: {fileID: 4615715928816915508}
   appsMenu: {fileID: 7581332999061053799}
---- !u!114 &6367875243843730130
+--- !u!114 &6918447902350571528
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9159763304813123672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2ee8c0748cbf564989a4e54c39725af, type: 3}
+  m_Script: {fileID: 11500000, guid: 92bee04a032256045bbb4e254cd351d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   destroyObject: {fileID: 5716520563191712332}
@@ -235,6 +235,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 23dc24c5a38370f449a9c45de2a15649,
         type: 3}
+    - target: {fileID: 4512137744819104374, guid: 646ec8f78c3f9a74d9a6364d55dae600,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnAppPage
+      objectReference: {fileID: 0}
     - target: {fileID: 4512137744979987283, guid: 646ec8f78c3f9a74d9a6364d55dae600,
         type: 3}
       propertyPath: m_Text
@@ -316,22 +321,19 @@ PrefabInstance:
     - target: {fileID: 6624419525722136293, guid: 646ec8f78c3f9a74d9a6364d55dae600,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ReturnFromMenu
+      value: ReturnFromMainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 6624419525722136293, guid: 646ec8f78c3f9a74d9a6364d55dae600,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 6367875243843730130}
+      objectReference: {fileID: 6918447902350571528}
     - target: {fileID: 7701822822824958397, guid: 646ec8f78c3f9a74d9a6364d55dae600,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3586322550383109260, guid: 646ec8f78c3f9a74d9a6364d55dae600, type: 3}
-    - {fileID: 217329146, guid: 646ec8f78c3f9a74d9a6364d55dae600, type: 3}
-    - {fileID: 9221120781814449206, guid: 646ec8f78c3f9a74d9a6364d55dae600, type: 3}
     - {fileID: 2100600754, guid: 646ec8f78c3f9a74d9a6364d55dae600, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 646ec8f78c3f9a74d9a6364d55dae600, type: 3}
 --- !u!1 &5716520563191712332 stripped

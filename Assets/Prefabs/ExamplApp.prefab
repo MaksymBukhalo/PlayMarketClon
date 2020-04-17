@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 5289416823251081073}
   - component: {fileID: 5067820526789647394}
   - component: {fileID: 6624419525722136293}
-  - component: {fileID: 9221120781814449206}
+  - component: {fileID: 5053337818879478575}
   m_Layer: 5
   m_Name: Return
   m_TagString: Untagged
@@ -376,7 +376,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9221120781814449206}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadDeccr
         m_Mode: 1
         m_Arguments:
@@ -387,7 +387,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &9221120781814449206
+--- !u!114 &5053337818879478575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -396,11 +396,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 112027316376099183}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3147a13ca982dc745954b190e01f551d, type: 3}
+  m_Script: {fileID: 11500000, guid: 92bee04a032256045bbb4e254cd351d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadDescription: {fileID: 4512137745170765059}
-  appsMenu: {fileID: 1704131148739551312}
+  destroyObject: {fileID: 3586322551027370875}
 --- !u!1 &1704131148739551312
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,9 +453,9 @@ GameObject:
   - component: {fileID: 3586322549580999090}
   - component: {fileID: 3586322549580999091}
   - component: {fileID: 3586322549580999092}
-  - component: {fileID: 2100600754}
+  - component: {fileID: 3806952078247905081}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ButtonLoadDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -561,8 +560,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2100600754}
-        m_MethodName: ClicApp
+      - m_Target: {fileID: 3806952078247905081}
+        m_MethodName: LoadDescriptionPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -572,7 +571,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2100600754
+--- !u!114 &3806952078247905081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -581,12 +580,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3586322549580999094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cba319cba5f6cc46a2801693e01fa92, type: 3}
+  m_Script: {fileID: 11500000, guid: 3147a13ca982dc745954b190e01f551d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPage: {fileID: 0}
-  listApp: {fileID: 0}
-  parent: {fileID: 0}
+  loadDescription: {fileID: 4512137745170765059}
+  appsMenu: {fileID: 1704131148739551312}
 --- !u!1 &3586322550257827499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,15 +1369,19 @@ PrefabInstance:
     - target: {fileID: 3745986901192470613, guid: 427ab2c85170ac849be75877f612b4bf,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ReturnApp
+      value: ReturnAppPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745986901192470635, guid: 427ab2c85170ac849be75877f612b4bf,
+        type: 3}
+      propertyPath: m_Name
+      value: ButtonReturn
       objectReference: {fileID: 0}
     - target: {fileID: 3745986901265024243, guid: 427ab2c85170ac849be75877f612b4bf,
         type: 3}
       propertyPath: m_Name
       value: ScrollRect
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1987127074, guid: 427ab2c85170ac849be75877f612b4bf, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 427ab2c85170ac849be75877f612b4bf, type: 3}
 --- !u!224 &4512137745170765056 stripped
 RectTransform:

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoadDescription : MonoBehaviour
+public class LoadDescriptionAndReturnApp : MonoBehaviour
 {
 	public GameObject loadDescription;
 	public GameObject appsMenu;
@@ -13,7 +13,7 @@ public class LoadDescription : MonoBehaviour
 		loadDescription.SetActive(true);
 	}
 
-	public void ReturnApp()
+	public void ReturnAppPage()
 	{
 		loadDescription.SetActive(false);
 		appsMenu.SetActive(true);

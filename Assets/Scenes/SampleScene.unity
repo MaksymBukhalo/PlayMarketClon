@@ -290,14 +290,53 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 1081319750}
+    - target: {fileID: 1047704380, guid: 6f6abf41f3af53b458bd322c1bb453ad, type: 3}
+      propertyPath: mainMenuPage
+      value: 
+      objectReference: {fileID: 1861154740}
+    - target: {fileID: 1047704380, guid: 6f6abf41f3af53b458bd322c1bb453ad, type: 3}
+      propertyPath: listApps
+      value: 
+      objectReference: {fileID: 11400000, guid: 672512ef53564f641b32be6618aa9799,
+        type: 2}
+    - target: {fileID: 1047704380, guid: 6f6abf41f3af53b458bd322c1bb453ad, type: 3}
+      propertyPath: parentalPageApp
+      value: 
+      objectReference: {fileID: 1081319750}
     - target: {fileID: 1204184544, guid: 6f6abf41f3af53b458bd322c1bb453ad, type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 1081319750}
+    - target: {fileID: 1204184544, guid: 6f6abf41f3af53b458bd322c1bb453ad, type: 3}
+      propertyPath: mainMenuPage
+      value: 
+      objectReference: {fileID: 1861154740}
+    - target: {fileID: 1204184544, guid: 6f6abf41f3af53b458bd322c1bb453ad, type: 3}
+      propertyPath: parentalPageApp
+      value: 
+      objectReference: {fileID: 1081319750}
+    - target: {fileID: 1204184544, guid: 6f6abf41f3af53b458bd322c1bb453ad, type: 3}
+      propertyPath: listApps
+      value: 
+      objectReference: {fileID: 11400000, guid: 672512ef53564f641b32be6618aa9799,
+        type: 2}
     - target: {fileID: 2064668697, guid: 6f6abf41f3af53b458bd322c1bb453ad, type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 979810854}
+    - target: {fileID: 2064668697, guid: 6f6abf41f3af53b458bd322c1bb453ad, type: 3}
+      propertyPath: mainMenuPage
+      value: 
+      objectReference: {fileID: 1861154740}
+    - target: {fileID: 2064668697, guid: 6f6abf41f3af53b458bd322c1bb453ad, type: 3}
+      propertyPath: parentalPageApp
+      value: 
+      objectReference: {fileID: 1081319750}
+    - target: {fileID: 2064668697, guid: 6f6abf41f3af53b458bd322c1bb453ad, type: 3}
+      propertyPath: listApps
+      value: 
+      objectReference: {fileID: 11400000, guid: 672512ef53564f641b32be6618aa9799,
+        type: 2}
     - target: {fileID: 97042057019745298, guid: 6f6abf41f3af53b458bd322c1bb453ad,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -468,6 +507,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 573206888307675575, guid: 6f6abf41f3af53b458bd322c1bb453ad,
+        type: 3}
+      propertyPath: m_Name
+      value: NameGame
+      objectReference: {fileID: 0}
     - target: {fileID: 573206888455622354, guid: 6f6abf41f3af53b458bd322c1bb453ad,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -503,6 +547,22 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 979810854}
+    - target: {fileID: 904595463959484108, guid: 6f6abf41f3af53b458bd322c1bb453ad,
+        type: 3}
+      propertyPath: mainMenuPage
+      value: 
+      objectReference: {fileID: 1861154740}
+    - target: {fileID: 904595463959484108, guid: 6f6abf41f3af53b458bd322c1bb453ad,
+        type: 3}
+      propertyPath: listApps
+      value: 
+      objectReference: {fileID: 11400000, guid: 672512ef53564f641b32be6618aa9799,
+        type: 2}
+    - target: {fileID: 904595463959484108, guid: 6f6abf41f3af53b458bd322c1bb453ad,
+        type: 3}
+      propertyPath: parentalPageApp
+      value: 
+      objectReference: {fileID: 1081319750}
     - target: {fileID: 7047778185135973484, guid: 6f6abf41f3af53b458bd322c1bb453ad,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -768,7 +828,6 @@ GameObject:
   - component: {fileID: 1081319753}
   - component: {fileID: 1081319752}
   - component: {fileID: 1081319751}
-  - component: {fileID: 1081319756}
   - component: {fileID: 1081319755}
   m_Layer: 5
   m_Name: Canvas
@@ -949,9 +1008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 1861154740}
-  canvac: {fileID: 1081319750}
-  exampleAppProgram: {fileID: 3586322551027370875, guid: 646ec8f78c3f9a74d9a6364d55dae600,
-    type: 3}
+  parentalCanvas: {fileID: 1081319750}
   nameGame: {fileID: 998323806}
   listAppProgram:
   - {fileID: 1047704375}
@@ -959,18 +1016,6 @@ MonoBehaviour:
   - {fileID: 2064668692}
   - {fileID: 1071923810}
   - {fileID: 1498888346}
---- !u!114 &1081319756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081319746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8740eb9e76cfc19498dbeb4dfac7d2a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1204184539 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7047778185135973485, guid: 6f6abf41f3af53b458bd322c1bb453ad,
@@ -1174,7 +1219,8 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 60
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 10ac1eaeb627e994ba0afa36f8fa9b2e, type: 3}
 --- !u!1 &1498888346 stripped
 GameObject:
@@ -1194,9 +1240,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cba319cba5f6cc46a2801693e01fa92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPage: {fileID: 1861154740}
-  listApp: {fileID: 11400000, guid: 672512ef53564f641b32be6618aa9799, type: 2}
-  parent: {fileID: 1081319750}
+  mainMenuPage: {fileID: 1861154740}
+  listApps: {fileID: 11400000, guid: 672512ef53564f641b32be6618aa9799, type: 2}
+  parentalPageApp: {fileID: 1081319750}
 --- !u!114 &1498888349
 MonoBehaviour:
   m_ObjectHideFlags: 0
