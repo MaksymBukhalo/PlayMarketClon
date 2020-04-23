@@ -5,38 +5,38 @@ using UnityEngine.UI;
 
 public class NewSizeMainMenu : MonoBehaviour
 {
-	[SerializeField] private GameObject mainMenu;
-	[SerializeField] private Transform parentalCanvas;
-	[SerializeField] private Text nameGame;
-	[SerializeField] private List<GameObject> listAppProgram;
+	[SerializeField] private GameObject _mainMenu;
+	[SerializeField] private Transform _parentalCanvas;
+	[SerializeField] private Text _nameGame;
+	[SerializeField] private List<GameObject> _listAppProgram;
 
-	private float appDistanceTransform = 400;
+	private float _appDistanceTransform = 400;
 
 	public void Start()
 	{
-		sizeMenu();
+		SizeMenu();
 	}
 
-	private void sizeMenu()
+	private void SizeMenu()
 	{
-		RectTransform size = mainMenu.GetComponent<RectTransform>();
-		if (listAppProgram.Count * appDistanceTransform > size.sizeDelta.y)
+		RectTransform size = _mainMenu.GetComponent<RectTransform>();
+		if (_listAppProgram.Count * _appDistanceTransform > size.sizeDelta.y)
 		{
 
-			size.sizeDelta = new Vector3(800f, size.sizeDelta.y + appDistanceTransform * (listAppProgram.Count - 3));
+			size.sizeDelta = new Vector3(800f, size.sizeDelta.y + _appDistanceTransform * (_listAppProgram.Count - 3));
 		}
 		TransformApps();
 	}
 
 	private void TransformApps()
 	{
-		mainMenu.transform.position = new Vector3(parentalCanvas.position.x, mainMenu.transform.position.y - (appDistanceTransform / 2 * (listAppProgram.Count - 3)));
-		nameGame.transform.position = new Vector3(0f, nameGame.transform.position.y + (appDistanceTransform / 4 * (listAppProgram.Count - 3)));
-		listAppProgram[0].transform.position = new Vector3(240f, nameGame.transform.position.y - 150f, 0f);
-		for (int i = 1; i < listAppProgram.Count; i++)
+		_mainMenu.transform.position = new Vector3(_parentalCanvas.position.x, _mainMenu.transform.position.y - (_appDistanceTransform / 2 * (_listAppProgram.Count - 3)));
+		_nameGame.transform.position = new Vector3(0f, _nameGame.transform.position.y + (_appDistanceTransform / 4 * (_listAppProgram.Count - 3)));
+		_listAppProgram[0].transform.position = new Vector3(240f, _nameGame.transform.position.y - 150f, 0f);
+		for (int i = 1; i < _listAppProgram.Count; i++)
 		{
-			float newPositionY = listAppProgram[0].transform.position.y - (appDistanceTransform / 2 * (listAppProgram.Count - 3) * i);
-			listAppProgram[i].transform.position = new Vector3(240f, newPositionY, 0f);
+			float newPositionY = _listAppProgram[0].transform.position.y - (_appDistanceTransform / 2 * (_listAppProgram.Count - 3) * i);
+			_listAppProgram[i].transform.position = new Vector3(240f, newPositionY, 0f);
 		}
 	}
 }

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ButtonReturnMainMenuPage : MonoBehaviour
 {
-	[SerializeField] private GameObject destroyObject;
+	[SerializeField] private GameObject _destroyObject;
 
 	public void ReturnFromMainMenu()
 	{
 		GameObject.Find("MainMenu").transform.position = new Vector3(GameObject.Find("Canvas").transform.position.x, 0f);
-		Destroy(destroyObject);
+		Destroy(_destroyObject);
 	}
 }

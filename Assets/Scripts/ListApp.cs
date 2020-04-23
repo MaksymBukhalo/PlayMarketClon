@@ -7,5 +7,5 @@ using UnityEngine.UI;
 
 public class ListApp : ScriptableObject
 {
-	public List<GameObject> appList;
+	public List<GameObject> AppList;
 }
